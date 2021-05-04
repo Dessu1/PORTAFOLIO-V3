@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+@import "./sass/Header.scss";
+@import "./sass/Content.scss";
+@import "./sass/Footer.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem auto 5rem;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+.chika-dancing {
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+
+  img {
+    width: 10rem;
+    height: auto;
+    transform: scaleX(-1);
+  }
+}
